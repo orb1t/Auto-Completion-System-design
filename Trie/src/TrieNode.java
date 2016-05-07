@@ -10,13 +10,14 @@ public class TrieNode {
     private  Map<Character,TrieNode>letterMap = new HashMap<Character, TrieNode>();
     private boolean isWord;
 
+    public TrieNode(char letter) {
+        this.letter = letter;
+    }
+
     public char getLetter() {
         return letter;
     }
 
-    public void setLetter(char letter) {
-        this.letter = letter;
-    }
 
     public Map<Character, TrieNode> getLetterMap() {
         return letterMap;
